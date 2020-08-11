@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Created-By: corey
+Premain-Class: com.corey.jvm.agent.ObjectSizeAgent
