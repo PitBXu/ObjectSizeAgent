@@ -8,6 +8,7 @@ import java.lang.instrument.Instrumentation;
  * @author: corey.yang
  */
 public class ObjectSizeAgent {
+
     private static Instrumentation inst;
 
     public static void premain(String agentArgs, Instrumentation _inst) {
@@ -17,4 +18,5 @@ public class ObjectSizeAgent {
     public static long sizeOf(Object o) {
         return inst.getObjectSize(o);
     }
+
 }
